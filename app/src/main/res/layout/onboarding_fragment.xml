@@ -48,7 +48,9 @@
         android:layout_marginTop="23dp"
         android:background="@drawable/get_started_button_bg"
         android:text="@string/get_started"
+        android:textAllCaps="false"
         app:backgroundTint="@color/app_pink"
         app:layout_constraintStart_toStartOf="@+id/welcome_description"
         app:layout_constraintTop_toBottomOf="@+id/welcome_description" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
