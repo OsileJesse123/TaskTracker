@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TaskTracker</string>
+    <string name="tasks_management">Tasks\nManagement</string>
+    <string name="manage_text">Manage your daily task easier like\nnever before. Easy to use</string>
+    <string name="get_started">Let\'s Get Started</string>
+</resources>

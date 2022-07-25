@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.onboarding.OnboardingFragment">
+
+    <ImageView
+        android:id="@+id/onboarding_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:paddingTop="110dp"
+        app:layout_constraintHeight_percent=".8"
+        app:layout_constraintVertical_bias="1"
+        android:src="@drawable/onboarding_screen_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_management"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tasks_management"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_text"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/task_management"
+        app:layout_constraintTop_toBottomOf="@+id/task_management" />
+
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/get_started_button_bg"
+        android:text="@string/get_started"
+        app:backgroundTint="@color/app_pink"
+        app:layout_constraintStart_toStartOf="@+id/welcome_description"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>
